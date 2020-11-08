@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <button type="button"
+              class="btn btn-outline-primary"
+              routerLink='detail'>Detalle</button>
+      <button type="button"
+              class="btn btn-outline-primary"
+              routerLink='edit'>Editar</button>
+      <button type="button"
+              class="btn btn-outline-primary"
+              routerLink='add'>Añadir</button>
+      <label>Usuario: {{ id }}</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

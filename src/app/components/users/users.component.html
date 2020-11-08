@@ -1,0 +1,21 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td scope="row">{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td><button class="btn btn-primary"
+                  [routerLink]="['/users', user.id]">Navegar (HTML)</button></td>
+        <td><button class="btn btn-primary"
+                  (click)=navegarDetalle(user.id)>Navegar (TS)</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
